@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>คำนวณ BMI</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="nutrition.html">ข้อมูลโภชนาการ</a></li>
+            <li><a href="meal-recommendation.html">แนะนำเมนูอาหาร</a></li>
+            <li><a href="bmi-calculator.html">คำนวณ BMI</a></li>
+            <li><a href="bmr_calculator.html">คำนวณ BMR</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>คำนวณค่า BMI ของคุณ</h1>
+    </header>
+  
+    
+    <main>
+        <div class="form-container">
+            <h2>HealthMate</h2>
+            <img src="images/logo.jpg "alt="เข้าสู่ระบบ" class="login-image">
+            <h2>คำนวณค่า BMI</h2>
+            <input type="number" id="weight" placeholder="น้ำหนัก (กิโลกรัม)">
+            <input type="number" id="height" placeholder="ส่วนสูง (เมตร)">
+            <button onclick="calculateBMI()">คำนวณ BMI</button>
+            <p id="bmi-result"></p>
+            <a href="index.html">กลับไปยังหน้าแรก</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 เว็บไซต์ให้คำแนะนำด้านโภชนาการ</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>แนะนำเมนูอาหาร</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="nutrition.html">ข้อมูลโภชนาการ</a></li>
+            <li><a href="meal-recommendation.html">แนะนำเมนูอาหาร</a></li>
+            <li><a href="bmi-calculator.html">คำนวณ BMI</a></li>
+            <li><a href="bmr_calculator.html">คำนวณ BMR</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>ระบบแนะนำเมนูอาหาร</h1>
+    </header>
+    
+    <main>
+        <div class="form-container">
+            <img src="images/logo.jpg "alt="เข้าสู่ระบบ" class="login-image">
+            <h2>HealthMate</h2>
+            <h2>เลือกเป้าหมายสุขภาพของคุณ:</h2>
+            <label for="goal">เป้าหมาย:</label>
+            <select id="goal" onchange="recommendMeal()">
+                <option value="ลดน้ำหนัก">ลดน้ำหนัก</option>
+                <option value="รักษาน้ำหนัก">รักษาน้ำหนัก</option>
+                <option value="เพิ่มน้ำหนัก">เพิ่มน้ำหนัก</option>
+            </select>
+            <p id="meal-suggestion"></p>
+            <a href="index.html">กลับไปยังหน้าแรก</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 เว็บไซต์ให้คำแนะนำด้านโภชนาการ</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

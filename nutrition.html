@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>ข้อมูลโภชนาการ</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="nutrition.html">ข้อมูลโภชนาการ</a></li>
+            <li><a href="meal-recommendation.html">แนะนำเมนูอาหาร</a></li>
+            <li><a href="bmi-calculator.html">คำนวณ BMI</a></li>
+            <li><a href="bmr_calculator.html">คำนวณ BMR</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>ข้อมูลโภชนาการ</h1>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <img src="images/logo.jpg "alt="เข้าสู่ระบบ" class="login-image">
+            <h2>HealthMate</h2>
+            <button class="popup-trigger" onclick="openNutritionPopup()">ค้นหาอาหารประเภทอาหารของคุณ</button>
+        </div>
+    </main>
+
+    <div id="nutrition-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closeNutritionPopup()">&times;</span>
+            <h2>ค้นหาข้อมูลโภชนาการ</h2>
+            <input type="text" id="foodInput" placeholder="กรอกชื่ออาหาร">
+            <button onclick="searchFood()">ค้นหา</button>
+            <div id="foodResult" class="result">
+                <!-- ผลการค้นหาจะปรากฏที่นี่ -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 เว็บไซต์ให้คำแนะนำด้านโภชนาการ</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

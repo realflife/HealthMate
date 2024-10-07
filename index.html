@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>HealthMate</title>
+</head>
+<body>
+    <header>
+        <h1>HealthMate</h1>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <img src="images/logo.jpg "alt="เข้าสู่ระบบ" class="login-image">
+            <h2>ยินดีต้อนเข้าสู่ HealthMate</h2>
+            <button onclick="openPopup()">ยินดีต้อนรับ</button>
+        </div>
+    </main>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" id="closePopup">&times;</span>
+            <h2>เลือกหัวข้อ</h2>
+            <div class="popup-buttons">
+                <a class="popup-button" href="nutrition.html">ข้อมูลโภชนาการ</a>
+                <a class="popup-button" href="meal-recommendation.html">แนะนำเมนูอาหาร</a>
+                <a class="popup-button" href="bmi-calculator.html">คำนวณ BMI</a>
+                <a class="popup-button" href="bmr_calculator.html">คำนวณ BMR</a>
+                <a class="popup-button" href="index.html">กลับไปยังหน้าแรก</a>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 คอมธุรกิจ คณะวิทยาการจัการมหาลัยราชภัฎเพชรบุรี</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

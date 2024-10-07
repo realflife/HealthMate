@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คำนวณ BMR</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="nutrition.html">ข้อมูลโภชนาการ</a></li>
+            <li><a href="meal-recommendation.html">แนะนำเมนูอาหาร</a></li>
+            <li><a href="bmi-calculator.html">คำนวณ BMI</a></li>
+            <li><a href="bmr_calculator.html">คำนวณ BMR</a></li>
+        </ul>
+    </nav>
+    <main>
+    <div class="form-container">
+        <h2>HealthMate</h2>
+        <img src="images/logo.jpg "alt="เข้าสู่ระบบ" class="login-image">
+        <h2>คำนวณ BMR</h2>
+
+        <label for="weight">น้ำหนัก (kg):</label>
+        <input type="number" id="weight" placeholder="กรอกน้ำหนักของคุณ">
+
+        <label for="height">ส่วนสูง (cm):</label>
+        <input type="number" id="height" placeholder="กรอกส่วนสูงของคุณ">
+
+        <label for="age">อายุ:</label>
+        <input type="number" id="age" placeholder="กรอกอายุของคุณ">
+
+        <label for="gender">เพศ:</label>
+        <select id="gender">
+            <option value="male">ชาย</option>
+            <option value="female">หญิง</option>
+        </select>
+
+        <button onclick="calculateBMR()">คำนวณ BMR</button>
+        <div id="bmrPopup" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <h3>ผลลัพธ์การคำนวณ BMR</h3>
+                <p id="bmrResult">ผลลัพธ์จะแสดงที่นี่</p>
+                <a class="popup-button" href="bmr_calculator.html">กลับ</a>
+            </div>
+        </div>
+    
+
+        <div id="bmrResult" class="result"></div>
+    </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 คอมธุรกิจ คณะวิทยาการจัการมหาลัยราชภัฎเพชรบุรี</p>
+    </footer>
+
+</body>   
+</html>
